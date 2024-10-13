@@ -2,7 +2,7 @@ package com.example.flower;
 
 
 public enum FlowerColor {
-    RED("FF0000"), WHITE("#FFFFFF"), YELLOW("");
+    RED("#FF0000"), WHITE("#FFFFFF"), YELLOW("#FFFF00");
 
     private String code;
 

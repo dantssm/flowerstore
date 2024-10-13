@@ -6,15 +6,16 @@ import lombok.Setter;
 
 @Getter@Setter@NoArgsConstructor
 public class FlowerPack {
-    private Flower flower;
-    private int count;
 
-    public FlowerPack(Flower flower, int count) {
+    private Flower flower;
+    private int amount;
+
+    public FlowerPack(Flower flower, int amount) {
         this.flower = new Flower(flower);
-        this.count = count;
+        this.amount = amount;
     }
 
     public double getPrice() {
-        return flower.getPrice() * count;
+        return flower.getPrice() * amount;
     }
 }
