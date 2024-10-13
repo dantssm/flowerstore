@@ -17,6 +17,7 @@ jobs:
       packages: read
       # To report GitHub Actions status checks
       statuses: write
+      
 
     steps:
       - name: Checkout code
@@ -31,3 +32,4 @@ jobs:
         env:
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ENABLE_GITHUB_ACTIONS_STEP_SUMMARY: true
