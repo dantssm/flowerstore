@@ -20,7 +20,8 @@ public class FlowerBucket {
     public double getPrice() {
         double price = 0;
         for (int i = 0; i < flowerPacks.size(); i++) {
-            price += flowerPacks.get(i).getAmount() * flowerPacks.get(i).getFlower().getPrice();
+            price += flowerPacks.get(i).getAmount() * 
+            flowerPacks.get(i).getFlower().getPrice();
         }
 
         return price;
